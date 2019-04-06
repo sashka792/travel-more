@@ -37,10 +37,11 @@ button,
 	display: inline-block;
 	text-transform: uppercase;
   	font-size: 16px;
-  	line-height: 26px;
-  	text-align: center;
-	  padding: 20px 62px;
-	  border: none;
+  	letter-spacing: 0.025em;
+	padding: 18px 40px 16px;
+	text-decoration: none;
+	color: #fff;
+	border: none;
 }
 .ba-search-form {
 	position: relative;
@@ -81,7 +82,8 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
-
+	color: #5474fd;
+	background-color: #fff;
 }
 
 input[type="text"],
@@ -108,7 +110,7 @@ select:focus {
 }
 /* Header */
 .ba-header{
-	background: #1c83b9 url(../img/intro-bg.jpg) no-repeat 50%;
+	background: #1c83b9 url(../img/intro-bg.jpg) no-repeat center/cover;
 	color: #fff;
 	min-height: 100vh;
 }
@@ -128,14 +130,20 @@ select:focus {
 }
 .ba-serch-form {
 	background-color: #fff;
-	pad
 }
-.ba-scroll{
-	padding-bottom: 100px;
+.scroll-down{
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	padding-bottom: 2px;
+}
+.ba-scroll__down,
+.ba-scroll__img:hover{
+	opacity: 0.4;
 }
 .ba-navigation{
 	background-color: #5474fd;
 	padding: 30px 0 33px;
+	margin-top: 20px;
 }
 .ba-logo{
 	font: 700 23px/1 'Josefin Sans', sans-serif;
@@ -161,7 +169,26 @@ select:focus {
 	background: url('../img/bg-2.jpg') no-repeat center /cover;
 }
 .advantages-title {
-	padding: 200px 0 50px 0;
+	padding: 200px 0 58px 0;
+}
+.advantages-wrap p{
+	line-height: 1.65;
+	letter-spacing: 0.035em;
+	padding-bottom: 25px;
+}
+.advantages-wrap .ba-button {
+	margin-top: 18px;
+	/* letter-spacing: 0.025em;
+	padding: 18px 40px 16px;
+	text-decoration: none; */
+	color: #fff;
+}
+.advantages-wrap-img {
+	margin: 120px 0;
+	/* margin-right: auto; */
+}
+.ba-advantages--img-2{
+	margin-right: auto;
 }
 /* Steps */
 .ba-steps {
@@ -233,6 +260,8 @@ select:focus {
   
 .ba-reviews-title {
 	text-align: center;
+	letter-spacing: 0.014em;
+	padding-bottom: 93px;
 }
   
 .tourist-wrap {
@@ -247,10 +276,27 @@ select:focus {
 .tourist-wrap-description {
 	flex-basis: 60%;
 	padding: 50px 60px;
+	position: relative;
 }
   
 .tourist-name {
 	text-transform: uppercase;
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+.fa-quote-left {
+	position: absolute;
+	font-size: 20px;
+	color: #5474fd;
+	top: 100px;
+}
+.tourist-text {
+	font-size: 14px;
+	line-height: 1.8;
+	letter-spacing: 0.025em;
+}
+.tourist-text::first-letter {
+	padding-left: 30px;
 }
 /* Footer */
 
@@ -284,6 +330,10 @@ select:focus {
 .ba-social-list__item{
 	padding-right: 25px;
 }
-.ba-social-list__item a:hover{
-	background-color: #5474fd;
+/* .ba-social-list__item a:hover {
+	fill: #5474fd;
+} */
+
+.svg-icon:hover {
+	fill: #5474fd;
 }
