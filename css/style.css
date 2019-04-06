@@ -256,4 +256,34 @@ select:focus {
 
 .ba-footer{
 	background-color: #232323;
+	text-align: center;
+	padding: 120px 0 50px 0;
+}
+
+.ba-footer-logo{
+	font: 700 24px/1 'Josefin Sans', sans-serif;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.ba-footer p{
+	letter-spacing: 0.05em;
+	padding-bottom: 28px;
+}
+
+.ba-social-list{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	margin-left: 23px;
+	padding: 0;
+	justify-content: center;
+}
+.ba-social-list__item{
+	padding-right: 25px;
+}
+.ba-social-list__item a:hover{
+	background-color: #5474fd;
 }
