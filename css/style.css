@@ -1,14 +1,19 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,700');
 
+body{
+	font: 400 16px/1.4 'Josefin Sans', sans-serif;
 }
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1200px;
+	max-width: 1150px;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
 /* Typography */
 a,
 input[type="submit"],
@@ -51,7 +56,80 @@ select:focus {
 textarea {
 
 }
-
+/* Header */
+.ba-header{
+	background: #1c83b9 url(../img/intro-bg.jpg) no-repeat 50%;
+	color: #fff;
+	min-height: 100vh;
+}
+.ba-introduction{
+	text-align: center;
+}
+.ba-main-title{
+	font: 700 47px/1 'Josefin Sans', sans-serif;
+	letter-spacing: 0.085em;
+	padding-top: 200px;
+	/* padding-bottom: 10px; */
+}
+.ba-subtitle{
+	font-size: 22px;
+	letter-spacing: 0.24em;
+	padding-bottom: 40px;
+}
+.ba-serch-form {
+	background-color: #fff;
+}
+.ba-navigation{
+	background-color: #5474fd;
+	padding: 30px 0 33px;
+	
+}
+.ba-logo{
+	font: 700 23px/1 'Josefin Sans', sans-serif;
+	letter-spacing: 0.1em;
+}
+.ba-menu {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.ba-menu__item{
+	padding-left: 10px;
+}
+.ba-menu__item a{
+	font: 400 14px/1.2 'Aleo', serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+/* Steps */
+.ba-steps {
+	background: #333333;
+	color: #e8e8e8;
+	text-align: center;
+	padding: 100px 0;
+  }
+  
+  .ba-steps-text {
+	font-size: 36px;
+	margin-top: 30px;
+  }
+  .ba-steps {
+	position: relative;
+  }
+  .advantages:after {
+	content: '';
+	background: url('../img/dotted.png');
+	width: 345px;
+	  height: 50px;
+	  display: block;
+	  position: absolute;
+	  top: -51px;
+	  left: 161px;
+  }
+  .advantages.book:after {
+	display: none;
+  }
 /* Footer */
 
 .ba-footer{
