@@ -141,6 +141,7 @@ select:focus {
 	opacity: 0.4;
 }
 .ba-navigation{
+	justify-content: flex-end;
 	background-color: #5474fd;
 	padding: 30px 0 33px;
 	margin-top: 20px;
